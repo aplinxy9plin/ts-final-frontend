@@ -1,0 +1,274 @@
+.add_ul.items {
+	position: absolute;
+	width: 30px;
+	height: auto;
+	top: 50%;
+	left: -60px;
+	transform: translateY(-50%);
+}
+
+.add_ul.items li {
+	width: 8px;
+	height: 8px;
+	margin: 10px 0;
+	background: white;
+	border-radius: 50%;
+	opacity: 0.4;
+	cursor: pointer;
+}
+
+.add_ul.items li.active {
+	opacity: 1;
+}
+
+.add_form {
+	position: absolute;
+	width: 300px;
+	height: 60px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.add_form fieldset {
+	position: absolute;
+	width: 300px;
+	height: 60px;
+	background: white;
+	border-radius: 3px;
+	opacity: 0;
+	transform: scale(0.2);
+	transition: all 0.4s ease-in-out;
+}
+
+.add_form fieldset .input, .add_form fieldset p {
+	display: inline-block;
+	width: 200px;
+	color: #333333;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.add_form fieldset input, .add_form fieldset p {
+	display: inline-block;
+	width: 200px;
+	color: #333333;
+	margin-left: 50px;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.add_form fieldset p {
+	margin-top: 22px;
+	text-align: center;
+}
+
+.add_form fieldset .input {
+	height: 40px;
+	margin-top: 5px;
+	border: none;
+	outline: none;
+}
+
+.add_form fieldset input {
+	height: 40px;
+	margin-top: 5px;
+	border: none;
+	outline: none;
+}
+
+.add_form fieldset .icon {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 15px;
+	transition: all 0.4s ease;
+}
+
+.add_form fieldset .icon i {
+	position: absolute;
+	display: block;
+}
+
+.add_form fieldset .icon i::before, .add_form fieldset .icon i::after {
+	position: absolute;
+	content: '';
+}
+
+.add_form fieldset .icon.left {
+	left: 10px;
+}
+
+.add_form fieldset .icon.right {
+	right: 10px;
+	cursor: pointer;
+}
+
+.add_form fieldset .icon.button:hover {
+	background: #f2f2f2;
+	border-radius: 3px;
+	transition: all 0.4s ease;
+}
+
+.add_form fieldset.enable {
+	z-index: 1;
+	opacity: 1;
+	transition: all 0.5s ease-out 0.2s;
+	transform: scale(1);
+	animation: enable 0.5s ease-out 0.2s;
+}
+
+.add_form fieldset.disable {
+	opacity: 0;
+	transition: all 0.3s ease-in;
+	transform: translateY(120px) scale(0.9);
+}
+
+@keyframes enable {
+	0% {
+		opacity: 0;
+		transform: scale(0.2);
+	}
+
+	60% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes error {
+	0%, 50%, 100% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(-3deg);
+	}
+
+	75% {
+		transform: rotate(3deg);
+	}
+}
+
+/**
+ * Icons in CSS, long as f****
+ */
+.icon .arrow {
+	width: 2px;
+	height: 17px;
+	top: 5px;
+	left: 14px;
+	background: #333333;
+}
+
+.icon .arrow::before {
+	width: 6px;
+	height: 6px;
+	bottom: -1px;
+	left: -3px;
+	border-color: #333333;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+	transform: rotate(45deg);
+}
+
+.icon .user {
+	width: 20px;
+	height: 10px;
+	bottom: 5px;
+	left: 5px;
+	box-shadow: 0 0 0 2px #333333 inset;
+	border-radius: 6px 6px 3px 3px;
+}
+
+.icon .user::before {
+	width: 10px;
+	height: 10px;
+	top: -9px;
+	left: 5px;
+	box-shadow: 0 0 0 2px #333333 inset;
+	border-radius: 50%;
+}
+
+.icon .letter {
+	width: 20px;
+	height: 12px;
+	top: 9px;
+	left: 5px;
+	box-shadow: 0 0 0 2px #333333 inset;
+	border-radius: 3px;
+}
+
+.icon .letter::before, .icon .letter::after {
+	width: 11px;
+	height: 2px;
+	top: 4px;
+	background: #333333;
+}
+
+.icon .letter::before {
+	left: 0;
+	transform: rotate(30deg);
+}
+
+.icon .letter::after {
+	right: 0;
+	transform: rotate(-30deg);
+}
+
+.icon .lock {
+	width: 20px;
+	height: 16px;
+	top: 9px;
+	left: 5px;
+	box-shadow: 0 0 0 2px #333333 inset;
+	border-radius: 3px;
+}
+
+.icon .lock::before {
+	width: 8px;
+	height: 8px;
+	top: -4px;
+	left: 4px;
+	border: 2px solid transparent;
+	border-top: 2px solid #333333;
+	border-right: 2px solid #333333;
+	border-radius: 50%;
+	transform: rotate(-45deg);
+}
+
+.icon .lock::after {
+	width: 6px;
+	height: 7px;
+	top: 4px;
+	left: 7px;
+	box-shadow: 0 0 0 2px #333333 inset;
+}
+
+.icon .heart {
+	width: 10px;
+	height: 10px;
+	top: 11px;
+	left: 7px;
+	background: #ff5233;
+	transform: rotate(45deg);
+}
+
+.icon .heart::before, .icon .heart::after {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #ff5233;
+}
+
+.icon .heart::before {
+	left: -6px;
+}
+
+.icon .heart::after {
+	top: -6px;
+}

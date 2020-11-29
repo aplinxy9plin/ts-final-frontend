@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="11px" viewBox="0 0 20 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1" transform="translate(-1380.000000, -30.000000)" fill="#1554BA" fill-rule="nonzero">
+            <g id="Header" transform="translate(0.000000, -0.000000)">
+                <g id="Right-SIde-OPtions" transform="translate(1008.000000, 0.000000)">
+                    <path d="M380.276433,35.5 L387.459645,28.3167878 C387.989642,27.7867905 387.989642,26.9274952 387.459645,26.3974979 C386.929648,25.8675007 386.070352,25.8675007 385.540355,26.3974979 L377.397498,34.5403551 C376.867501,35.0703523 376.867501,35.9296477 377.397498,36.4596449 L385.540355,44.6025021 C386.070352,45.1324993 386.929648,45.1324993 387.459645,44.6025021 C387.989642,44.0725048 387.989642,43.2132095 387.459645,42.6832122 L380.276433,35.5 Z" id="Path" transform="translate(382.428571, 35.500000) rotate(-90.000000) translate(-382.428571, -35.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
